@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini tienda</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor-principal">
+        <!--encabezado de la página-->
+        <header class="header">
+            <h1 class="titulo">Tienda Virtual</h1>
+        </header>
+
+        <!--Aqui se crearán los botones a partir del array de categorías-->
+        <div class="filtros" id="contenedor-filtros"></div>
+
+        <!--se añaden los porductos desde desde js-->
+        <div class="catalogo" id="contenedor-catalogo"></div>
+
+        <!--seccion del carrito-->
+        <aside class="seccion-carrito">
+            <div class="carrito-header">
+                    <h2 class="subtitulo">Carrito de Compras</h2>
+                    <button type="button" class="btn-vaciar" id="btn-vaciar">Vaciar carrito</button>
+            </div>
+
+            <!-- Mensaje visible solo cuando el carrito está vacio -->
+            <p class="carrito-vacio" id="mensaje-vacio">Tu carrito está vacío</p>
+            
+            <!--se mostrarán los porductos agregados al carrito-->
+            <div class="lista-carrito" id="contenedor-carrito"></div>
+
+            <!--Resumen de la compra-->
+            <div class="resumen-compra" id="resumen-compra">
+                    <h3>Resumen de compra</h3>
+                    <p>Artículos: <span id="resumen-articulos">0</span></p>
+                    <p>Subtotal: <span id="resumen-subtotal">$ 0</span></p>
+                    <p>Descuento: <span id="resumen-descuento">$ 0</span></p>
+                    <p class="total">Total: <span id="resumen-total">$ 0</span></p>
+            </div>   
+        </aside>
+    </main>
+    
+</body>
+</html>
